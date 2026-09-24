@@ -1,3 +1,4 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
 <title>Michael Berry</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap">
@@ -315,6 +316,46 @@
     border: 1px solid var(--border);
     padding: 2px 8px;
     border-radius: 3px;
+  }
+  .ai-notes {
+    margin-top: 10px;
+    border-top: 1px solid var(--border);
+    padding-top: 10px;
+  }
+  .ai-notes summary {
+    cursor: pointer;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--accent);
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .ai-notes summary::-webkit-details-marker { display: none; }
+  .ai-notes summary::before {
+    content: '▸';
+    font-size: 0.7rem;
+    transition: transform 0.15s;
+  }
+  .ai-notes[open] summary::before { transform: rotate(90deg); }
+  .ai-notes-body {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .ai-note-item {
+    font-size: 0.8125rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+    font-weight: 300;
+  }
+  .ai-note-term {
+    font-family: monospace;
+    font-weight: 500;
+    color: var(--text);
+    margin-right: 4px;
   }
   .project-highlight {
     background: var(--accent-dim);
@@ -700,6 +741,12 @@
             <span class="stack-chip">20 tables</span>
             <span class="stack-chip">24 stored procs</span>
           </div>
+          <details class="ai-notes">
+            <summary>AI engineering notes from this project</summary>
+            <div class="ai-notes-body">
+              <div class="ai-note-item"><span class="ai-note-term">AI as a layer, not the whole product —</span>the AI Neural Network / Guide component sits on top of a traditional Blazor Server + Azure SQL architecture, a common real-world pattern where AI augments an existing system rather than replacing it.</div>
+            </div>
+          </details>
         </div>
         <div class="project-highlight">
           <div class="project-highlight-label">Key deliverables</div>
@@ -729,6 +776,15 @@
           <span class="stack-chip">Firestore</span>
           <span class="stack-chip">Vercel</span>
         </div>
+        <details class="ai-notes">
+          <summary>AI engineering notes from this project</summary>
+          <div class="ai-notes-body">
+            <div class="ai-note-item"><span class="ai-note-term">Prompt engineering —</span>system/user prompt design was the difference between generic output and consistently platform-tuned titles, descriptions, and hashtags across YouTube, TikTok, and Instagram.</div>
+            <div class="ai-note-item"><span class="ai-note-term">Structured outputs —</span>the generation pipeline required predictable, parseable responses so results could flow straight into the UI and Firestore.</div>
+            <div class="ai-note-item"><span class="ai-note-term">Model/API integration —</span>OpenAI API wired into a Node/Express backend, handling auth, request/response shaping, and error cases.</div>
+            <div class="ai-note-item"><span class="ai-note-term">Mocking AI for development —</span>built a factory-pattern mock AI engine so the full pipeline could run end-to-end at zero API cost, enabling 70+ test cases without burning credits.</div>
+          </div>
+        </details>
       </div>
 
       <!-- Steiner Survivors -->
@@ -939,3 +995,5 @@
     <span class="footer-built">Built with <span>AI</span> · Dearborn, MI</span>
   </div>
 </footer>
+
+</body></html>
