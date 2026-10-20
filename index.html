@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Michael Berry</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap">
@@ -420,6 +420,30 @@
     line-height: 1.6;
   }
 
+  .project-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .project-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    padding: 5px 12px;
+    border-radius: var(--radius);
+    transition: background 0.15s, color 0.15s;
+  }
+  .project-link:hover { background: var(--accent); color: var(--bg); }
+  .project-link-note {
+    font-size: 0.75rem;
+    color: var(--text-faint);
+  }
+
   /* ── Skills ── */
   .skills-grid {
     display: grid;
@@ -776,6 +800,10 @@
           <span class="stack-chip">Firestore</span>
           <span class="stack-chip">Vercel</span>
         </div>
+        <div class="project-links">
+          <a href="https://creatorflow-ai-zeta.vercel.app" target="_blank" rel="noopener" class="project-link">↗ Live demo</a>
+          <span class="project-link-note">First load may take up to a minute while the server wakes up</span>
+        </div>
         <details class="ai-notes">
           <summary>AI engineering notes from this project</summary>
           <div class="ai-notes-body">
@@ -939,14 +967,16 @@
       </div>
       <div class="exp-card">
         <div class="exp-role">Administrative Assistant</div>
-        <div class="exp-org">Team Ali LLC — Real Estate Services</div>
+        <div class="exp-org">Genius Realty LLC (formerly Team Ali LLC) — Real Estate Services</div>
         <div class="exp-period">Dearborn, MI · 2021 – Present</div>
         <ul class="exp-bullets">
-          <li>Managed client correspondence via email and phone</li>
-          <li>Coordinated property showings and buyer communications</li>
-          <li>Organized appointments, showings, and scheduling for the broker</li>
-          <li>Developed property listings with visuals and detailed descriptions</li>
-          <li>Maintained document management systems and file organization</li>
+          <li>Use AI to draft listing descriptions, cutting writing time per listing from 30–45 minutes to about 10–15.</li>
+          <li>Produce property marketing videos and brokerage promotion using AI tools such as CapCut and VideoProc Vlogger.</li>
+          <li>Handle client email and phone correspondence, answering buyer and seller inquiries on listed properties.</li>
+          <li>Coordinate property showings and serve as the point of contact for prospective buyers.</li>
+          <li>Manage the broker's calendar of appointments, showings, and meetings.</li>
+          <li>Publish listings and transactions on MLS with photos and full property details.</li>
+          <li>Maintain all client documentation, contracts, and records, plus the brokerage's in-house Excel CRM.</li>
         </ul>
       </div>
     </div>
