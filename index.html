@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]{display:none!important}</style></head><body>
 <title>Michael Berry</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap">
@@ -790,18 +790,23 @@
         </div>
         <div class="project-name">CreatorFlow AI</div>
         <p class="project-desc">
-          AI-powered content optimizer for creators on YouTube, TikTok, and Instagram. Generates platform-tuned titles, descriptions, hashtags, and SEO recommendations. Designed a factory-pattern mock AI engine so the full pipeline runs end to end at zero API cost, with 70+ documented test cases.
+          AI-powered content optimizer for creators on YouTube, TikTok, and Instagram. Generates platform-tuned titles, descriptions, hashtags, and SEO recommendations with the OpenAI API. Built an eval suite that raised the AI's pass rate from 60% to 83%, backed by 111 automated tests. The live demo runs in mock-AI mode at zero API cost.
         </p>
         <div class="project-stack">
           <span class="stack-chip">React 18</span>
           <span class="stack-chip">Node.js</span>
           <span class="stack-chip">Express</span>
+          <span class="stack-chip">OpenAI API</span>
           <span class="stack-chip">Firebase</span>
           <span class="stack-chip">Firestore</span>
           <span class="stack-chip">Vercel</span>
+          <span class="stack-chip">Render</span>
+          <span class="stack-chip">Vitest</span>
+          <span class="stack-chip">Jest</span>
         </div>
         <div class="project-links">
           <a href="https://creatorflow-ai-zeta.vercel.app" target="_blank" rel="noopener" class="project-link">↗ Live demo</a>
+          <a href="https://github.com/mberry-dev/creatorflow-ai" target="_blank" rel="noopener" class="project-link">↗ Code</a>
           <span class="project-link-note">First load may take up to a minute while the server wakes up</span>
         </div>
         <details class="ai-notes">
@@ -809,8 +814,9 @@
           <div class="ai-notes-body">
             <div class="ai-note-item"><span class="ai-note-term">Prompt engineering —</span>system/user prompt design was the difference between generic output and consistently platform-tuned titles, descriptions, and hashtags across YouTube, TikTok, and Instagram.</div>
             <div class="ai-note-item"><span class="ai-note-term">Structured outputs —</span>the generation pipeline required predictable, parseable responses so results could flow straight into the UI and Firestore.</div>
-            <div class="ai-note-item"><span class="ai-note-term">Model/API integration —</span>OpenAI API wired into a Node/Express backend, handling auth, request/response shaping, and error cases.</div>
-            <div class="ai-note-item"><span class="ai-note-term">Mocking AI for development —</span>built a factory-pattern mock AI engine so the full pipeline could run end-to-end at zero API cost, enabling 70+ test cases without burning credits.</div>
+            <div class="ai-note-item"><span class="ai-note-term">Model/API integration —</span>OpenAI API (gpt-4o-mini) wired into a Node/Express backend, with JSON-mode responses, input validation, and error handling.</div>
+            <div class="ai-note-item"><span class="ai-note-term">Mocking AI for development —</span>a built-in mock AI fallback lets the full pipeline run end to end at zero API cost, so the public demo and all 111 automated tests run without spending credits.</div>
+            <div class="ai-note-item"><span class="ai-note-term">Evals —</span>built a 20-case eval suite that scores the real model's output with pass/fail checks (length limits, invented facts, prompt injection, bad input). It found invented numbers and fake timestamps; improved prompts raised the average pass rate from 60% to 83% across repeated runs.</div>
           </div>
         </details>
       </div>
@@ -893,6 +899,8 @@
           <span class="skill-item">AI-assisted workflows</span>
           <span class="skill-item">Rapid prototyping</span>
           <span class="skill-item">AI feature integration</span>
+          <span class="skill-item">OpenAI API</span>
+          <span class="skill-item">LLM evals</span>
         </div>
       </div>
       <div class="skill-block">
