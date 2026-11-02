@@ -868,6 +868,15 @@
           <a href="https://github.com/mberry-dev/driveshare" target="_blank" rel="noopener" class="project-link">↗ Code</a>
           <span class="project-link-note">First load may take up to a minute while the server wakes up</span>
         </div>
+        <details class="ai-notes">
+          <summary>Engineering notes from this project</summary>
+          <div class="ai-notes-body">
+            <div class="ai-note-item"><span class="ai-note-term">Design patterns —</span>six patterns wired into real features: Singleton (sessions), Observer (watchlist price alerts), Mediator (search, booking and messaging), Builder (car listings), Proxy (audited payments) and Chain of Responsibility (password recovery).</div>
+            <div class="ai-note-item"><span class="ai-note-term">Automated tests —</span>52 pytest tests cover each pattern on its own plus every user flow: login and recovery, booking rules, approve → pay → review, alerts, messaging and bad input. Each test runs on a fresh copy of the demo database.</div>
+            <div class="ai-note-item"><span class="ai-note-term">Security —</span>salted password hashing (Werkzeug) with automatic upgrade of older SHA-256 hashes, and the secret key kept in the server environment.</div>
+            <div class="ai-note-item"><span class="ai-note-term">Deployment —</span>deployed on Render with Gunicorn from a render.yaml blueprint; the demo database resets to clean data on each restart.</div>
+          </div>
+        </details>
       </div>
     </div>
 
