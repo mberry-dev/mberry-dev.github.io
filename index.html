@@ -827,6 +827,7 @@
             <div class="ai-note-item"><span class="ai-note-term">Model/API integration —</span>OpenAI API (gpt-4o-mini) wired into a Node/Express backend, with JSON-mode responses, input validation, and error handling.</div>
             <div class="ai-note-item"><span class="ai-note-term">Mocking AI for development —</span>a built-in mock AI fallback lets the full pipeline run end to end at zero API cost, so the public demo and all 111 automated tests run without spending credits.</div>
             <div class="ai-note-item"><span class="ai-note-term">Evals —</span>built a 20-case eval suite that scores the real model's output with pass/fail checks (length limits, invented facts, prompt injection, bad input). It found invented numbers and fake timestamps; improved prompts raised the average pass rate from 60% to 83% across repeated runs.</div>
+            <div class="ai-note-item"><span class="ai-note-term">Automated tests —</span>111 automated tests, separate from the evals: 48 backend tests (Vitest + Supertest) and 63 frontend tests (Jest + React Testing Library), all running against the mock AI so they cost nothing.</div>
           </div>
         </details>
       </div>
@@ -855,11 +856,12 @@
         </div>
         <div class="project-name">DriveShare</div>
         <p class="project-desc">
-          A vehicle sharing platform that connects owners and renters — browse listings, book vehicles, and manage reservations through a streamlined web interface.
+          A vehicle sharing platform that connects owners and renters — browse listings, book vehicles, and manage reservations through a streamlined web interface. Backed by 52 automated tests (pytest) covering all six design patterns and every user flow.
         </p>
         <div class="project-stack">
           <span class="stack-chip">Web</span>
           <span class="stack-chip">Full-stack</span>
+          <span class="stack-chip">pytest</span>
         </div>
         <div class="project-links">
           <a href="https://driveshare-4m5e.onrender.com" target="_blank" rel="noopener" class="project-link">↗ Live demo</a>
@@ -926,6 +928,7 @@
         <div class="skill-category">Programming</div>
         <div class="skill-items">
           <span class="skill-item">C#</span>
+          <span class="skill-item">Python</span>
           <span class="skill-item">JavaScript</span>
           <span class="skill-item">React</span>
           <span class="skill-item">Node.js / Express</span>
@@ -1053,5 +1056,6 @@
     <span class="footer-built">Built with <span>AI</span> · Dearborn, MI</span>
   </div>
 </footer>
+
 
 </body></html>
