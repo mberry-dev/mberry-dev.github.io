@@ -891,14 +891,46 @@
           </div>
         </details>
       </div>
+
+      <!-- Recipease -->
+      <div class="project-card">
+        <div class="project-tag-row">
+          <span class="project-tag">Web App</span>
+          <span class="project-tag role">Solo Build</span>
+        </div>
+        <div class="project-name">Recipease</div>
+        <p class="project-desc">
+          A full-stack recipe manager: save recipes, plan a week of meals on a drag-and-drop calendar, and turn the plan into one combined grocery list scaled to the number of people. Built on a Node.js and Express REST API with SQLite, backed by 110 automated tests.
+        </p>
+        <div class="project-stack">
+          <span class="stack-chip">Node.js</span>
+          <span class="stack-chip">Express</span>
+          <span class="stack-chip">SQLite</span>
+          <span class="stack-chip">REST API</span>
+          <span class="stack-chip">JavaScript</span>
+          <span class="stack-chip">Jest</span>
+          <span class="stack-chip">Render</span>
+        </div>
+        <div class="project-links">
+          <a href="https://recipease-uj0p.onrender.com" target="_blank" rel="noopener" class="project-link">↗ Live demo</a>
+          <a href="https://github.com/mberry-dev/recipease" target="_blank" rel="noopener" class="project-link">↗ Code</a>
+          <span class="project-link-note">First load may take up to a minute while the server wakes up</span>
+        </div>
+        <details class="ai-notes">
+          <summary>Engineering notes from this project</summary>
+          <div class="ai-notes-body">
+            <div class="ai-note-item"><span class="ai-note-term">REST API —</span>14 routes for recipes, the weekly meal plan and grocery lists. Every input is validated, so bad requests get a clear 400 response and malformed JSON can't crash the server.</div>
+            <div class="ai-note-item"><span class="ai-note-term">Grocery list logic —</span>parses quantities and units (including fractions like 1 1/2 cups), combines duplicate ingredients across recipes, and scales amounts for the number of people.</div>
+            <div class="ai-note-item"><span class="ai-note-term">Bug hunt —</span>after the course, audited the project and fixed a bulk save that hung or crashed the server, a field-name mismatch that made server saves silently fail, and a page-load error that broke the saved-weeks list.</div>
+            <div class="ai-note-item"><span class="ai-note-term">Automated tests —</span>110 tests (Jest and Supertest): every API route on an in-memory database, unit tests for validation and parsing, and frontend tests that check the page and the server agree on the week number for every day from 2020 to 2031, run in three time zones. A separate smoke check tests a live deployment.</div>
+            <div class="ai-note-item"><span class="ai-note-term">Deployment —</span>one Express server serves both the API and the website, deployed on Render from a render.yaml blueprint; the demo database resets to sample data on each restart.</div>
+          </div>
+        </details>
+      </div>
     </div>
 
     <!-- Mini projects -->
     <div class="mini-projects">
-      <div class="mini-card">
-        <div class="mini-name">Recipease</div>
-        <div class="mini-desc">E-commerce site that turns recipes into shoppable ingredient carts.</div>
-      </div>
       <div class="mini-card">
         <div class="mini-name">Weather App</div>
         <div class="mini-desc">Live weather lookup powered by a real-time API — search any city for current conditions.</div>
