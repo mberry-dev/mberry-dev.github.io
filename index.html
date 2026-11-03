@@ -851,6 +851,15 @@
           <a href="https://github.com/mberry-dev/steiner-survivors-monogame/releases/latest" target="_blank" rel="noopener" class="project-link">↓ Download (Windows)</a>
           <a href="https://github.com/mberry-dev/steiner-survivors-monogame" target="_blank" rel="noopener" class="project-link">↗ Code</a>
         </div>
+        <details class="ai-notes">
+          <summary>Engineering notes from this project</summary>
+          <div class="ai-notes-body">
+            <div class="ai-note-item"><span class="ai-note-term">Game state system —</span>a single GameState (Menu, Settings, Playing, Paused) controls what the game updates and draws each frame, so menus, gameplay and pause never conflict.</div>
+            <div class="ai-note-item"><span class="ai-note-term">Soundtrack system —</span>music played through MonoGame's media player, pausing and resuming with the game, plus a key to switch to a random track.</div>
+            <div class="ai-note-item"><span class="ai-note-term">Optional music —</span>copyrighted songs are kept out of the public repo; the song list builds only when it exists on the machine, and the game runs silently instead of crashing without it.</div>
+            <div class="ai-note-item"><span class="ai-note-term">Later improvements —</span>after the course, made enemy contact damage use a cooldown, made restarts fully reset the game, fixed the fire-rate upgrade, and published a ready-to-play Windows release.</div>
+          </div>
+        </details>
       </div>
 
       <!-- DriveShare -->
