@@ -31,6 +31,15 @@
   @media (min-width: 680px) { .qa.has-img { grid-template-columns: minmax(0, 1fr) 240px; align-items: start; } }
   .qa ul { margin: 0 0 10px; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; }
   .qa ul.plain { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; font-size: 14px; }
+  .pyr { list-style: none; padding: 0; margin: 12px 0 0; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+  .pyr li { text-align: center; padding: 8px 10px; border-radius: 6px; font-weight: 600; font-size: 15px; color: #141620; }
+  .pyr li:nth-child(1) { width: 38%; background: #E8B84A; }
+  .pyr li:nth-child(2) { width: 54%; background: #C9D98C; }
+  .pyr li:nth-child(3) { width: 70%; background: #B5D3A8; }
+  .pyr li:nth-child(4) { width: 86%; background: #A8C8E8; }
+  .pyr li:nth-child(5) { width: 100%; background: #9DB8E6; }
+  .pyr-in { margin-top: 8px; text-align: center; font-size: 14px; color: var(--muted); }
+  @media (max-width: 520px) { .pyr li { font-size: 13px; } .pyr li:nth-child(1) { width: 52%; } }
   figure { margin: 0; }
   figure img { width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); display: block; background: #0a1024; }
   figcaption { font-size: 13px; color: var(--muted); margin-top: 6px; }
@@ -89,15 +98,23 @@
     <div>
       <h2 id="q3">How does the AI work?</h2>
       <p>A cascading neural network processes user interview responses and reflection data to generate personalized recommendations and actionable guidance.</p>
+      <ol class="pyr" aria-label="Reasoning layers from top to bottom">
+        <li>Personalized Guidance</li>
+        <li>Symmetric Reasoning Auditing</li>
+        <li>Controlled Auditing</li>
+        <li>Contextual Reasoning Auditing</li>
+        <li>Neural Reasoning</li>
+      </ol>
+      <p class="pyr-in">&#8593; User input data (goals, reflection patterns, challenges, progress metrics)</p>
     </div>
   </section>
 
   <section class="qa has-img" aria-labelledby="q4">
     <div>
       <h2 id="q4">What database technology does it use?</h2>
-      <p>Azure-hosted SQL Server with full CRUD stored procedures for 4 core tables:</p>
+      <p>Azure-hosted SQL Server with full CRUD stored procedures. This FAQ was written in the first semester, when the team was working with 4 core tables:</p>
       <ul class="plain"><li>dbo.Noun</li><li>dbo.Metric</li><li>dbo.Pype</li><li>dbo.POD</li></ul>
-      <p>All queries run under 100 ms.</p>
+      <p>All queries ran under 100 ms. In the second semester the design grew well beyond these four tables.</p>
     </div>
     <figure>
       <img src="../img/faq-azure.jpg" width="900" height="900" alt="Diagram: Azure Cloud connected to an Azure SQL Database holding the Noun, Metric, Pype and POD tables, with full CRUD stored procedures.">
