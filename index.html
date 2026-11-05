@@ -786,10 +786,10 @@
           <details class="ai-notes">
             <summary>AI engineering notes from this project</summary>
             <div class="ai-notes-body">
-              <div class="ai-note-item"><span class="ai-note-term">AI as a separate layer —</span>the team's scope was the Azure SQL backend and a Blazor Server prototype (about 80% database and CRUD, 20% AI and analytics integration). The neural network reasoning engine is an external component the database was designed to feed, and the end-user app was out of scope.</div>
               <div class="ai-note-item"><span class="ai-note-term">Data for the AI —</span>a Verb action taxonomy that links Input, Catalyst and Output Nouns, plus NOVA coordination records, give the external engine structured user data to reason over.</div>
               <div class="ai-note-item"><span class="ai-note-term">Safe data access —</span>every database call goes through a parameterized stored procedure, and a pod parameter on every procedure keeps each user's data isolated at the database layer.</div>
               <div class="ai-note-item"><span class="ai-note-term">Credentials kept out of Git —</span>connection strings load through configuration instead of source code, a lesson from an early connection-string mistake, and an end-of-sprint audit checked that no credentials were committed.</div>
+              <div class="ai-note-item"><span class="ai-note-term">AI as a separate layer —</span>the team's scope was the Azure SQL backend and a Blazor Server prototype (about 80% database and CRUD, 20% AI and analytics integration). The neural network reasoning engine is an external component the database was designed to feed, and the end-user app was out of scope.</div>
             </div>
           </details>
         </div>
@@ -798,6 +798,7 @@
           <div class="project-highlight-item"><div class="highlight-dot"></div><span>CRUD pages, task &amp; work scheduling, and foreign-key reporting</span></div>
           <div class="project-highlight-item"><div class="highlight-dot"></div><span>Explain feature linking each work item to the guide task that explains it</span></div>
           <div class="project-highlight-item"><div class="highlight-dot"></div><span>Three-tier architecture: Blazor Server → C# app layer with Entity Framework Core → Azure SQL (20 tables, 24 procedures, 27 views)</span></div>
+          <div class="project-highlight-item"><div class="highlight-dot"></div><span>12 use cases and a 90-case test plan documented</span></div>
           <div class="project-highlight-item"><div class="highlight-dot"></div><span>June requirements certified by the client at an August 6 demo</span></div>
           <div class="project-highlight-item"><div class="highlight-dot"></div><span>Client confirmed acceptance by email and described the team as great to work with</span></div>
         </div>
