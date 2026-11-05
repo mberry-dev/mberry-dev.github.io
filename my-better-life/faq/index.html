@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Better Life: Project FAQ | Michael Berry</title>
+<meta name="description" content="Frequently asked questions about My Better Life, an AI-powered personal development platform built as a University of Michigan-Dearborn Senior Design capstone.">
+<style>
+  :root {
+    --bg: #F5F4F0; --surface: #FFFFFF; --text: #141620; --muted: #4F5266; --line: #DAD8D0;
+    --accent: #8A5E00; --accent-bg: rgba(198,138,0,0.12); --link: #7A5200; --head: #EDEBE4;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0F1117; --surface: #171A23; --text: #ECEDF3; --muted: #A9ACC0; --line: #2A2E3B;
+            --accent: #F0A500; --accent-bg: rgba(240,165,0,0.14); --link: #F0B93A; --head: #1F2330; color-scheme: dark; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; display: flex; flex-direction: column; gap: 28px; }
+  a { color: var(--link); }
+  a:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 2px; }
+  .nav { font-size: 14px; display: flex; flex-wrap: wrap; gap: 4px 16px; }
+  .eyebrow { font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin: 0 0 8px; }
+  h1 { font-size: clamp(30px, 6vw, 42px); line-height: 1.15; margin: 0 0 12px; text-wrap: balance; }
+  h2 { font-size: 20px; margin: 0 0 8px; }
+  p { margin: 0 0 10px; }
+  .lede { font-size: 18px; color: var(--muted); max-width: 62ch; }
+  .logo { width: 100%; max-width: 360px; height: auto; border-radius: 12px; display: block; margin: 0 0 16px; }
+  .qa { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  @media (min-width: 680px) { .qa.has-img { grid-template-columns: minmax(0, 1fr) 240px; align-items: start; } }
+  .qa ul { margin: 0 0 10px; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; }
+  .qa ul.plain { font-family: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace; font-size: 14px; }
+  figure { margin: 0; }
+  figure img { width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--line); display: block; background: #0a1024; }
+  figcaption { font-size: 13px; color: var(--muted); margin-top: 6px; }
+  .tbl { overflow-x: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { background: var(--head); font-size: 13px; letter-spacing: .04em; text-transform: uppercase; }
+  tr:last-child td { border-bottom: 0; }
+  td:first-child { font-weight: 600; width: 22%; }
+  .note { font-size: 14px; color: var(--muted); }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <nav class="nav" aria-label="Page links">
+    <a href="../">&larr; Project overview</a>
+    <a href="../../">Back to my portfolio</a>
+  </nav>
+
+  <header>
+    <img class="logo" src="../img/logo.jpg" width="800" height="559" alt="My Better Life logo: a stylized MB monogram with a leaf, a person and a rising sun, with the tagline Empower your progress, your journey, your success.">
+    <p class="eyebrow">University of Michigan-Dearborn · Senior Design 2026 · AI-Powered Backend Database Engineering</p>
+    <h1>My Better Life: Frequently Asked Questions</h1>
+    <p class="lede">From the project handout the team prepared for our Senior Design presentation.</p>
+  </header>
+
+  <section class="qa has-img" aria-labelledby="q1">
+    <div>
+      <h2 id="q1">What is My Better Life?</h2>
+      <p>An AI-powered personal development platform that helps users set ambitious goals, break them into actionable milestones, and track progress through weekly cycles and structured reflections.</p>
+    </div>
+    <figure>
+      <img src="../img/faq-phone.jpg" width="700" height="897" alt="Phone screen showing a dashboard with goals and milestones, a daily reflection prompt, and a progress chart.">
+      <figcaption>Concept screen.</figcaption>
+    </figure>
+  </section>
+
+  <section class="qa has-img" aria-labelledby="q2">
+    <div>
+      <h2 id="q2">How is this different from other apps?</h2>
+      <p>Unlike typical habit trackers that rely on generative AI, My Better Life prioritizes privacy, transparency, and structured progress tracking. Instead of sending sensitive user data to external AI systems, it uses cascading neural network reasoning and POD Academy auditing to deliver consistent, controlled insights.</p>
+      <p>This means:</p>
+      <ul>
+        <li><strong>Better privacy</strong> (less data exposure)</li>
+        <li><strong>More reliable tracking</strong> (not AI guesswork)</li>
+        <li><strong>Greater transparency</strong> (no black-box decisions)</li>
+      </ul>
+    </div>
+    <figure>
+      <img src="../img/faq-different.jpg" width="900" height="900" alt="Graphic comparing typical AI habit trackers with My Better Life: better privacy, reliable tracking, and greater transparency.">
+      <figcaption>How it differs from other apps.</figcaption>
+    </figure>
+  </section>
+
+  <section class="qa" aria-labelledby="q3">
+    <div>
+      <h2 id="q3">How does the AI work?</h2>
+      <p>A cascading neural network processes user interview responses and reflection data to generate personalized recommendations and actionable guidance.</p>
+    </div>
+  </section>
+
+  <section class="qa has-img" aria-labelledby="q4">
+    <div>
+      <h2 id="q4">What database technology does it use?</h2>
+      <p>Azure-hosted SQL Server with full CRUD stored procedures for 4 core tables:</p>
+      <ul class="plain"><li>dbo.Noun</li><li>dbo.Metric</li><li>dbo.Pype</li><li>dbo.POD</li></ul>
+      <p>All queries run under 100 ms.</p>
+    </div>
+    <figure>
+      <img src="../img/faq-azure.jpg" width="900" height="900" alt="Diagram: Azure Cloud connected to an Azure SQL Database holding the Noun, Metric, Pype and POD tables, with full CRUD stored procedures.">
+      <figcaption>Database overview.</figcaption>
+    </figure>
+  </section>
+
+  <section aria-labelledby="why">
+    <h2 id="why">Why us? The My Better Life difference (security and privacy focus)</h2>
+    <p>My Better Life is engineered to provide advanced AI support for your personal development without sacrificing your personal data to public generative AI platforms.</p>
+    <div class="tbl" role="region" aria-label="Comparison table" tabindex="0">
+      <table>
+        <thead><tr><th scope="col">Aspect</th><th scope="col">Other AI platforms</th><th scope="col">My Better Life</th></tr></thead>
+        <tbody>
+          <tr><td>Security &amp; Privacy (Data Handling)</td><td>Sensitive user data is often sent to external clouds and third-party models (risk of leaks and usage for training).</td><td>Data is processed and stored internally within a secured Azure-hosted backend. No data is sent to external, untrusted systems. Total user control.</td></tr>
+          <tr><td>Reliability &amp; Customization (Outputs)</td><td>Rely on large, black-box models trained on general internet data. Outputs can be inconsistent, or hallucinatory (not grounded in your data).</td><td>Recommendations are tailored to your unique goals and progress. Uses grounded reasoning based on structured user data. Consistent and verifiable.</td></tr>
+          <tr><td>Transparency (Process Owner)</td><td>AI dictates reasoning based on generic web data. Decisions are opaque. How advice is reached is often unexplainable.</td><td>User-led growth (setting goals, weekly reflections). AI supports the user within an understandable framework. Referencing POD Academy auditing and explicit data points.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <p class="note">These are the team's design goals and claims from our Senior Design handout. The project was built for an external client, so the code is client-owned. See the <a href="../">project overview</a> and the <a href="../../posters/my-better-life-poster.pdf">Senior Design poster</a>.</p>
+</main>
+</body>
+</html>
