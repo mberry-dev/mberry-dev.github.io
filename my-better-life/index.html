@@ -33,6 +33,15 @@
   figcaption { font-size: 14px; color: var(--muted); }
   .chips { display: flex; flex-direction: row; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin-top: 4px; }
   .chips li { background: var(--accent-bg); color: var(--text); border-radius: 6px; padding: 3px 10px; font-size: 14px; font-weight: 500; }
+  .pyr { list-style: none; padding: 0; margin: 12px 0 0; display: flex; flex-direction: column; align-items: center; gap: 4px; }
+  .pyr li { text-align: center; padding: 8px 10px; border-radius: 6px; font-weight: 600; font-size: 15px; color: #141620; }
+  .pyr li:nth-child(1) { width: 38%; background: #E8B84A; }
+  .pyr li:nth-child(2) { width: 54%; background: #C9D98C; }
+  .pyr li:nth-child(3) { width: 70%; background: #B5D3A8; }
+  .pyr li:nth-child(4) { width: 86%; background: #A8C8E8; }
+  .pyr li:nth-child(5) { width: 100%; background: #9DB8E6; }
+  .pyr-in { margin-top: 8px; text-align: center; font-size: 14px; color: var(--muted); }
+  @media (max-width: 520px) { .pyr li { font-size: 13px; } .pyr li:nth-child(1) { width: 52%; } }
   .note { font-size: 14px; color: var(--muted); }
   .arch { display: grid; grid-template-columns: minmax(0, 1fr); gap: 16px; }
   @media (min-width: 640px) { .arch { grid-template-columns: 1fr 1fr; align-items: start; } }
@@ -78,6 +87,19 @@
       <img src="img/architecture.jpg" width="1000" height="1076" alt="Diagram of the Azure database architecture flow: C# talks to EF Core, which calls stored procedures against the Noun and POD tables in Azure SQL.">
       <figcaption>Database architecture flow, from the poster.</figcaption>
     </figure>
+  </section>
+
+  <section class="card" aria-labelledby="ai">
+    <h2 id="ai">How the AI works</h2>
+    <p>A cascading neural network processes user interview responses and reflection data, then passes the result through layers of auditing before it becomes personalized guidance.</p>
+    <ol class="pyr" aria-label="Reasoning layers from top to bottom">
+        <li>Personalized Guidance</li>
+        <li>Controlled Auditing</li>
+        <li>Contextual Reasoning Auditing</li>
+        <li>Symmetric Reasoning Auditing</li>
+        <li>Neural Reasoning</li>
+    </ol>
+    <p class="pyr-in">&#8593; User input data (goals, reflection patterns, challenges, progress metrics)</p>
   </section>
 
   <section class="card" aria-labelledby="results">
