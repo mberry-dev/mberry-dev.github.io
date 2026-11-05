@@ -62,8 +62,8 @@
     <p>I was team lead and AI and technical lead of a four-person team building the platform for an external client.</p>
     <ul>
       <li>Owned the architecture across the database and application layers.</li>
-      <li>Built the CRUD pages, task and work scheduling, foreign-key reporting, and the AI Explain feature behind the recommendation engine.</li>
-      <li>Took over as project manager for the final two weeks at the client's request, recovered a schedule that had slipped, and delivered every client requirement before the deadline.</li>
+      <li>Built the CRUD pages, task and work scheduling, foreign-key reporting, and the Explain feature that links each work item to the guide task that explains it.</li>
+      <li>Led code reviews and end-of-sprint configuration audits, including checks that no credentials were committed to Git.</li>
     </ul>
   </section>
 
@@ -91,7 +91,7 @@
 
   <section class="card" aria-labelledby="ai">
     <h2 id="ai">How the AI works</h2>
-    <p>A cascading neural network processes user interview responses and reflection data, then passes the result through layers of auditing before it becomes personalized guidance.</p>
+    <p>The platform is designed to feed an external AI reasoning engine. In the project's design, a cascading neural network processes user interview responses and reflection data, then passes the result through layers of auditing before it becomes personalized guidance. Our scope was the Azure SQL backend and the Blazor Server prototype, and the end-user app was out of scope.</p>
     <p class="pyr-in">User input data (goals, reflection patterns, challenges, progress metrics) &#8595;</p>
     <ol class="pyr" aria-label="Reasoning layers from top to bottom">
       <li>Neural Reasoning</li>
@@ -109,7 +109,7 @@
       <li>Real-time data visualization with Syncfusion charts.</li>
       <li>Summary queries averaged 85 ms and 40 ms in the team's tests, under the 100 ms goal.</li>
       <li>A scalable design that supports AI-driven recommendations and content auditing.</li>
-      <li>12 use cases covered, with a written requirements, design and test documentation set.</li>
+      <li>12 use cases defined, with written requirements, design and test documentation (a 90-case test plan).</li>
     </ul>
   </section>
 
