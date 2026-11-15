@@ -768,7 +768,7 @@
           </div>
           <div class="project-name">My Better Life</div>
           <p class="project-desc">
-            Year-long Senior Design capstone for a real external client. Led a four-person team building the Azure SQL backend and a Blazor Server prototype for a personal-development and guidance platform, designed to feed the client's external AI reasoning engine. The client accepted the June deliverables in August and called the team great to work with.
+            Eight-month Senior Design capstone (January–August 2026) for a real external client. Led a four-person team on a personal-development and guidance platform built on an Azure SQL database the client managed himself. The team kept the C# code and NuGet packages in Visual Studio aligned with the SQL database, since a mismatch on either side would break the system, tested new queries, and used Syncfusion to build Gantt charts filled from the database. A very connected project, run the way the client wanted, feeding his external AI reasoning engine. The client accepted the June deliverables in August and called the team great to work with.
           </p>
           <div class="project-stack">
             <span class="stack-chip">ASP.NET Core</span>
@@ -787,9 +787,9 @@
             <summary>AI engineering notes from this project</summary>
             <div class="ai-notes-body">
               <div class="ai-note-item"><span class="ai-note-term">Data for the AI —</span>a Verb action taxonomy that links Input, Catalyst and Output Nouns, plus NOVA coordination records, give the external engine structured user data to reason over.</div>
-              <div class="ai-note-item"><span class="ai-note-term">Safe data access —</span>every database call goes through a parameterized stored procedure, and a pod parameter on every procedure keeps each user's data isolated at the database layer.</div>
+              <div class="ai-note-item"><span class="ai-note-term">Safe data access —</span>the C# code reaches the client's database only through parameterized stored procedures, and a pod parameter on every procedure keeps each user's data isolated at the database layer.</div>
               <div class="ai-note-item"><span class="ai-note-term">Credentials kept out of Git —</span>connection strings load through configuration instead of source code, a lesson from an early connection-string mistake, and an end-of-sprint audit checked that no credentials were committed.</div>
-              <div class="ai-note-item"><span class="ai-note-term">AI as a separate layer —</span>the team's scope was the Azure SQL backend and a Blazor Server prototype (about 80% database and CRUD, 20% AI and analytics integration). The neural network reasoning engine is an external component the database was designed to feed, and the end-user app was out of scope.</div>
+              <div class="ai-note-item"><span class="ai-note-term">AI as a separate layer —</span>the client managed most of the Azure SQL database; the team's scope was keeping the C# code, NuGet packages and SQL database aligned and working together (about 80% backend and CRUD, 20% AI and analytics integration), including testing new queries. The neural network reasoning engine is an external component the database feeds, and the end-user app was out of scope.</div>
             </div>
           </details>
         </div>
@@ -797,7 +797,8 @@
           <div class="project-highlight-label">Key deliverables</div>
           <div class="project-highlight-item"><div class="highlight-dot"></div><span>CRUD pages, task &amp; work scheduling, and foreign-key reporting</span></div>
           <div class="project-highlight-item"><div class="highlight-dot"></div><span>Explain feature linking each work item to the guide task that explains it</span></div>
-          <div class="project-highlight-item"><div class="highlight-dot"></div><span>Three-tier architecture: Blazor Server → C# app layer with Entity Framework Core → Azure SQL (20 tables, 24 procedures, 27 views)</span></div>
+          <div class="project-highlight-item"><div class="highlight-dot"></div><span>Kept the C# code and NuGet packages in Visual Studio aligned with the client's Azure SQL database, testing new queries and stored procedure calls end to end</span></div>
+          <div class="project-highlight-item"><div class="highlight-dot"></div><span>Syncfusion Gantt charts populated from the database through C#</span></div>
           <div class="project-highlight-item"><div class="highlight-dot"></div><span>12 use cases and a 90-case test plan documented</span></div>
           <div class="project-highlight-item"><div class="highlight-dot"></div><span>June requirements certified by the client at an August 6 demo</span></div>
           <div class="project-highlight-item"><div class="highlight-dot"></div><span>Client confirmed acceptance by email and described the team as great to work with</span></div>
@@ -1078,7 +1079,7 @@
           I'm a graduate of the University of Michigan-Dearborn, where I earned a B.S. in Computer Information Science with a concentration in Computer Science, graduating with a 3.44 cumulative GPA and a 3.80 across my final seven semesters. I build things that work — using AI as a core part of how I develop, not an afterthought.
         </p>
         <p>
-          My best work came from real pressure: a year-long Senior Design capstone delivered to a real client, a solo AI product shipped across six Agile sprints, a vehicle-sharing platform, and a team-built 2D game. I'm most in my element when there's a real problem and a deadline.
+          My best work came from real pressure: an eight-month Senior Design capstone delivered to a real client, a solo AI product shipped across six Agile sprints, a vehicle-sharing platform, and a team-built 2D game. I'm most in my element when there's a real problem and a deadline.
         </p>
         <p>
           Fluent in English and Arabic. Actively seeking roles in AI development, solutions engineering, or technical lead positions — especially at teams that move fast and build with AI.
