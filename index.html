@@ -521,6 +521,31 @@
     margin-bottom: 16px;
   }
   .about-text p:last-child { margin-bottom: 0; }
+  .about-text ul {
+    list-style: none;
+    margin: -6px 0 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .about-text li {
+    position: relative;
+    padding-left: 18px;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--text-muted);
+    line-height: 1.7;
+  }
+  .about-text li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.72em;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--accent);
+  }
   .exp-card {
     background: var(--surface);
     border: 1px solid var(--border);
@@ -1106,16 +1131,34 @@
     <div class="about-grid">
       <div class="about-text">
         <p>
-          What I love about building with AI is that when I have an idea, I can bring it to life, and I love seeing a project all the way through: finishing it, deploying it and shipping it. I direct AI to build, and I use it to audit and explain code.
+          I’m a software engineer who loves turning ideas into real, working products.
         </p>
         <p>
-          I treat AI-built software like any engineering project: plan, design, implement, then check the result against the plan and iterate until it matches. I pick the architecture and services, keep API keys and other secrets out of source control, and verify with automated tests, evals and security checks instead of reading every line.
+          What excites me most about building software with AI is the ability to take an idea from concept to completion: planning the architecture, directing AI-assisted implementation, testing, refining, deploying, and ultimately shipping something people can use.
         </p>
         <p>
-          My best work came from real pressure: an eight-month Senior Design capstone delivered to a real client, a solo AI product shipped across six Agile sprints, a vehicle-sharing platform, and a team-built 2D game. I'm most in my element when there's a real problem and a deadline.
+          I approach AI-assisted software development with an engineering mindset. I decide the architecture and technology stack with AI’s help, establish clear requirements, manage implementation, and validate results against the original plan. I use AI not only to accelerate development, but also to audit code, explain implementation decisions, identify issues, and improve software quality. Security, maintainability, automated testing, and proper handling of secrets remain essential parts of the process.
         </p>
         <p>
-          I graduated from the University of Michigan-Dearborn with a B.S. in Computer and Information Science. Fluent in English and Arabic, I'm looking for AI engineering and software engineering roles on teams that move fast and build with AI.
+          My experience includes:
+        </p>
+        <ul>
+          <li>An eight-month Senior Design capstone delivered to a real client.</li>
+          <li>A solo AI-powered product developed and shipped across six Agile sprints.</li>
+          <li>A vehicle-sharing platform.</li>
+          <li>A collaborative 2D game development project.</li>
+        </ul>
+        <p>
+          These experiences reinforced what I enjoy most: solving real problems, working toward meaningful deadlines, and seeing projects through to completion.
+        </p>
+        <p>
+          I hold a B.S. in Computer and Information Science from the University of Michigan-Dearborn and am fluent in English and Arabic.
+        </p>
+        <p>
+          I’m interested in AI Engineering and Software Engineering opportunities where I can contribute to fast-moving teams, build practical solutions, embrace emerging technologies, and take ownership of products from idea to deployment.
+        </p>
+        <p>
+          I don’t just enjoy building software. I enjoy finishing it, shipping it, and seeing it work in the real world.
         </p>
         <div class="edu-row">
           <div class="edu-item">
